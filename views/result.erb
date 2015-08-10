@@ -1,0 +1,9 @@
+<h1>What kind of triangle do you have?</h1>
+<!-- <h2><%= @result %> time(s)</h2> -->
+
+<% if @triangle.triangle?() == true %>
+  <h5>You have a(n):</h5>
+<%= @triangle.triangle_type() %>
+<% else %>
+  <h5> This is not a triangle </h5>
+<% end %>
